@@ -1,0 +1,37 @@
+.test1 {
+  font-size: 90px;
+  stroke-width: 1px;
+  stroke-dasharray: 900;
+  animation: draw 1.5s ease-out infinite;
+}
+.test2{
+  font-size: 90px;
+  stroke-width: 1px;
+  stroke-dasharray: 900;
+  animation: draw1 1.5s ease-in infinite;
+}
+
+@keyframes draw {
+  0% {
+    stroke: black;
+    stroke-dashoffset: 90;
+    fill: transparent;
+  }
+  100% {
+    stroke: green;
+    stroke-dashoffset: 0;
+    fill: red;
+  }
+}
+@keyframes draw1 {
+  0% {
+    stroke: black;
+    stroke-dashoffset: 90;
+    fill: transparent;
+  }
+  100% {
+    stroke: green;
+    stroke-dashoffset: 0;
+    fill: purple;
+  }
+}
